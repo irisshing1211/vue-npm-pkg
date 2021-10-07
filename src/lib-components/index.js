@@ -7,3 +7,7 @@ export {
     default as LargeBtn
 }
 from './LargeBtn.vue';
+export {
+    default as RightMenu
+}
+from './RightMenu.vue';
