@@ -8,8 +8,8 @@ export default Vue.extend({
   components: { RightMenu },
   name: "ServeDev",
   data:()=> ({
-    menuItems:[{name:"Partner", to:"Partner",activeImg:"", inactiveImg:""},
-    {name:"Partner2", to:"Partner2",activeImg:"", inactiveImg:""}]
+    menuItems:[{name:"Partner", to:"Partner",icon:"bar-chart-fill"},
+    {name:"Partner2", to:"Partner2",icon:"card-image"}]
   }),
   // components: {
   //  IrisTestNpmpkgSample,

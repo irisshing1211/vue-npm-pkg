@@ -6,12 +6,17 @@
       :key="item.name"
     >
       <b-link :to="{ name: item.to }">
-        <img :src="item.activeImg" :alt="item.to" class="menu-img mx-2" />
-        <img
-          :src="item.inactiveImg"
-          :alt="item.to"
+        <b-icon
+          :icon="item.icon"
+          style="color: #ffffff"
+          class="menu-img mx-2"
+        ></b-icon>
+        <b-icon
+          :icon="item.icon"
+          :style="`color: ${bgColor}`"
           class="menu-img-active mx-2"
-        />
+        ></b-icon>
+
         <span>{{ item.name }}</span>
       </b-link>
     </li>
@@ -23,8 +28,8 @@ export default {
   name: "RightMenu",
   props: {
     current: String, //this.$route.meta.rootMenu
-    items: Array, //[{name:"Partner", to:"Partner",activeImg:"", inactiveImg:""}]
-    bgColor:String,
+    items: Array, //[{name:"Partner", to:"Partner",icon:"bootstrap icon"}]
+    bgColor: String,
   },
   methods: {
     isActiveItem(rootMenu) {
@@ -36,12 +41,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "~bootstrap/scss/functions";
-//@import '~@/style/variables';
 
 .menu {
   display: flex;
   flex-direction: column;
-  //background-color: $primary;
   border-radius: 1.25rem;
   box-shadow: -10px -10px 20px 0 #fff, 10px 10px 20px 0 rgba(174, 174, 192, 0.4),
     inset 4px 4px 6px 0 rgba(255, 255, 255, 0.4);
@@ -78,7 +81,6 @@ export default {
         border-radius: 1.5rem;
         text-decoration: none;
         font-weight: 500;
-      //  color: $primary;
         box-shadow: 10px 10px 20px 0 rgb(174 174 192 / 40%),
           inset 2px 2px 6px 0 rgb(255 255 255 / 80%);
         backdrop-filter: blur(10px);
