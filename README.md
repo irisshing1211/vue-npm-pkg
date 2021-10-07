@@ -2,10 +2,12 @@
  This repo is a vue component libary package for **npm**.
  
  In this project, I also try to install `eslint` and `bootstrap-vue`
+ 
  ## Preparation / What you will need
  1. install [vue-sfc-rollup](https://www.npmjs.com/package/vue-sfc-rollup)
   `npm install -g vue-sfc-rollup`
  2. you must have an npm account
+ 3. If you want to create a private package, your must have a **npm pro / npm teams / GitHub Enterprise** account
  ## Getting start
  1. After installed `vue-sfc-rollup` in globla, cd to the root directory then run `sfc-init` to init the project
  2. It'll need you to answer some question:
