@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-import '../src/style/all.scss'
+//import './style/all.scss'
 import {
   BootstrapVue,
   IconsPlugin
